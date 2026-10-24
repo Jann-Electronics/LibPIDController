@@ -1,0 +1,37 @@
+{
+  "name": "LibPIDController",
+  "version": "1.0.0",
+  "description": "Discrete PID controller with filtered derivative, derivative on measurement, clamping anti-windup, deadband, asymmetric gains, stability detection and full internal state for logging.",
+  "keywords": "pid, controller, control, regulator, anti-windup, deadband, closed-loop",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jann-Electronics/LibPIDController.git"
+  },
+  "authors": [
+    {
+      "name": "JojeNN97",
+      "maintainer": true
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://jannelectronics.com",
+  "frameworks": "*",
+  "platforms": "*",
+  "headers": "PIDController.h",
+  "examples": [
+    {
+      "name": "Basic",
+      "base": "examples/basic",
+      "files": ["basic.cpp"]
+    },
+    {
+      "name": "State logging",
+      "base": "examples/state_logging",
+      "files": ["state_logging.cpp"]
+    }
+  ],
+  "export": {
+    "exclude": [".pio", ".vscode"]
+  },
+  "dependencies": []
+}
